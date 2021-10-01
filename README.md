@@ -33,7 +33,14 @@ So I decided to go over all references (7559 images) and the best model (VGG16 w
 
 So glad to see that after hard work!
 
-As a conclusions, I 
+As a conclusions:
++ I ended up completing the project for the deadline objetive and with some great results.
++ I want to highlight the lack of variety and quantity of data which makes the main goal harder to achieve.
++ The installation and configuration of the drivers, libraries and so on was one of the most consuming tasks.
++ The Fine Tuning process is incredible useful specially in computer vision tasks and when you are limited by the data as the case.
+
+Future improvements (or things to keep in mind):
++ 
 
 
 
