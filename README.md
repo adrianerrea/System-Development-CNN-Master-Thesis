@@ -33,15 +33,13 @@ So I decided to go over all references (7559 images) and the best model (VGG16 w
 
 So glad to see that after hard work!
 
-As a conclusions:
-+ I ended up completing the project for the deadline objetive and with some great results.
-+ I want to highlight the lack of variety and quantity of data which makes the main goal harder to achieve.
+In conclusion:
++ I ended up completing the project for the deadline (not always trivial) and with some great results.
++ I want to highlight the lack of variety and quantity of data which made the main goal harder to achieve.
 + The installation and configuration of the drivers, libraries and so on was one of the most consuming tasks.
-+ The Fine Tuning process is incredible useful specially in computer vision tasks and when you are limited by the data as the case.
++ The Fine Tuning process is incredible useful specially in computer vision tasks and when you are limited by the data.
 
 Future improvements (or things to keep in mind):
-+ 
-
-
-
-I had to use Google Collab (once again 😅) to train the models
++ The size of the details from the printing labels forced the dimensions of the images to be quite big and using Google Collab (once again 😅) limited the iteration process. Each epoch was timeless. Trying a bigger (or different) model or training longer should help the performance. Using more computational resources could have improved this point.
++ The unbalanced dataset presented surely impacts the results. Oversampling or undersampling techniques are always a good try.
++ I could not load the model beforehand in the inference step, so this was too slow to test in a real environment. Changing to different API may speed it up.
