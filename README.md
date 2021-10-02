@@ -19,7 +19,9 @@ For the embedding task, I created a C++ application to integrate the libraries f
 
 
 ## Code
-In the repository there are a few notebooks I was developing throughout the project as well as some python scripts for the main application to be called as well as the code of the main application in C++.
+In the repository there are a few notebooks I was developing throughout the project as well as some python scripts for the main application to be called as well as the code of the main application in C++. Specifically:
++ Preprocessing.ipynb: Notebook to renaming the images, converting to .jpg, reducing dimensions and splitting them into train, val and test
++ 
 
 ## Results, Conclusions and Improvements
 The results obtanied were reasonable good. For a single omelette reference (the most common) I had just 3255 images to play with and the metrics were quite awesome. In the test set (around 488 images from the 3255 images) I got the following metrics:
