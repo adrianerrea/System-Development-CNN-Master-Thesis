@@ -8,7 +8,7 @@ The main goal of this final project was to create an embedding system combined w
 
 This was designed and deployed as a need of the omelette producer to improve their quality process. In particular, they aimed for a system that was able to classify incorrect printing labels from their line of production. So that was cleary a binary classification task with a huge variety of labels (types of omelettes, different printing mistakes, different printing languages and so on). 
 
-So the main problem was divided in two different ones: a ML problem with an omelette images dataset looking for the best model to classify correctly all the different labels prinitng and other task embedding all the hardware and software involved into a system to make it work in a production line.
+So the main problem was divided in two different ones: a ML problem with an omelette images dataset looking for the best model to classify correctly all the different labels printing and other task embedding all the hardware and software involved into a system to make it work in a production line.
 
 For the Machine Learning task, I used Tensorflow and Keras to develop the neural networks. Specifically, I tried a Basic CNN, VGG16 and VGG16 with Fine-Tuning to compare their results. Besides that, my first intuition was to develop a model to do well on a single omelette reference. If that was the case, I would try to develop a more generalist model to do it well on all the printing labels. For this ML task, I also had to preprocess the data, label the data manually (hard stuff, trust me) and reduce the size of each image before starting off.
 
@@ -20,8 +20,12 @@ For the embedding task, I created a C++ application to integrate the libraries f
 
 ## Code
 In the repository there are a few notebooks I was developing throughout the project as well as some python scripts for the main application to be called as well as the code of the main application in C++. Specifically:
-+ Preprocessing.ipynb: Notebook to renaming the images, converting to .jpg, reducing dimensions and splitting them into train, val and test
-+ 
++ _Preprocessing.ipynb_: Notebook to renaming the images, converting to .jpg, reducing dimensions and splitting them into train, val and test
++ _CNNs_Training_Inference.ipynb_: Main notebook of the project. It contains the steps for loading the images, building the models, training phase, plotting learning curves and results as well as the option to download the wrong predictions and visualizing the activations of the hidden layers. 
+
+To keep in mind:
++ I also used another software to remove the background from the images within the preprocessing step but it is not shown here.
++ The main notebook (_CNNs_Training_Inference.ipynb_) contains the process and results for the global reference. The notebook for the most common omelette reference is quite similar, so I decided not to publish it here.
 
 ## Results, Conclusions and Improvements
 The results obtanied were reasonable good. For a single omelette reference (the most common) I had just 3255 images to play with and the metrics were quite awesome. In the test set (around 488 images from the 3255 images) I got the following metrics:
