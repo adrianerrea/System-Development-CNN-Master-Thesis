@@ -1,4 +1,4 @@
-# System_Development_CNN_Master_Thesis
+# System-Development-CNN-Master-Thesis
 
 ## Description
 This is my repository for the final project (or thesis) I did in my Master's degree of Computer Science based on Convolutional Neural Networks (also known as CNNs).
