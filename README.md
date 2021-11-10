@@ -29,7 +29,7 @@ To keep in mind:
 + I truly believe that the ML part of this project is the spotlight, so I did not upload any C++ code of the main application. If someone is really interested, feel free to talk to me!
 
 ## Results, Conclusions and Improvements
-The results obtanied were reasonable good. For a single omelette reference (the most common) I had just 3255 images to play with and the metrics were quite awesome. In the test set (around 488 images from the 3255 images) I got the following metrics:
+The results obtanied were reasonably good. For a single omelette reference (the most common) I had just 3255 images to play with and the metrics were quite awesome. In the test set (around 488 images from the 3255 images) I got the following metrics:
 
 ![image](https://user-images.githubusercontent.com/18461107/135482957-b78f9bf9-152a-4674-8c6b-e8cde18ccc89.png)
 
